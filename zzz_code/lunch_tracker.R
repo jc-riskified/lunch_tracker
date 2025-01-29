@@ -159,7 +159,7 @@ server <- function(input, output, session) {
   observeEvent(input$create_rating, {
     showModal(
       modalDialog(
-        title = "Add a New Rating",
+        title = "Add a New Rating - try pasting from email if adding new restaurant for consistency",
         selectizeInput("new_restaurant_suggestions", "Select or Type a Restaurant", 
                        choices = unique(c(default_restaurants, data()$Restaurant)),  
                        options = list(create = TRUE)),  # Allow new entries
