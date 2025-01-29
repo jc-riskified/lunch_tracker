@@ -1,0 +1,21 @@
+READ ME
+
+Lunch Tracker About
+------------------------------------
+
+This application can be used to track your lunches and see which restaurants and meals you liked. You can paste the restaurant list straight from your email each day and see the ratings you gave for those restaurants. You can also look up individual restaurants and submit ratings.
+
+Lunch Tracker How to Use
+------------------------------------
+1. Clone the repository 
+2. Move the folder to your Dock. (can prob only be added near trash can bottom right)
+3. When you want to check ratings or submit a rating, click the folder in dock and then click "Lunch Tracker App"
+4. It should launch in your browser
+
+Required
+------------------------------------
+You must have R Studio installed and R must be installed to "/usr/local/bin/Rscript "
+
+Questions
+------------------------------------
+Any questions can be directed to @jonathan.chan
