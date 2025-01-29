@@ -13,6 +13,13 @@ Lunch Tracker How to Use
 4. Right click the icon, click options, and then "Keep in Dock"
 5. Now you should have this readily available and can easily access it at all times
 
+OPTIONAL Assign icon to Lunch App
+1. Copy a png or icon to your clipboard
+2. Locate "Lunch Tracker App" in folder
+3. Right click and click "get info"
+4. Click on file icon in top left of window and paste
+5. The icon should change for this now
+
 Required
 ------------------------------------
 You must have R Studio installed and R must be installed to "/usr/local/bin/Rscript "
