@@ -8,10 +8,10 @@ This application can be used to track your lunches and see which restaurants and
 Lunch Tracker How to Use
 ------------------------------------
 1. Clone the repository 
-2. Move the folder to your Dock. (can prob only be added near trash can bottom right)
-	has to be the whole folder not just the app
-3. When you want to check ratings or submit a rating, click the folder in dock and then click "Lunch Tracker App"
-4. It should launch in your browser
+2. Open the folder and click on "Lunch Tracker App"
+3. It should launch in your browser and open in your Dock
+4. Right click the icon, click options, and then "Keep in Dock"
+5. Now you should have this readily available and can easily access it at all times
 
 Required
 ------------------------------------
