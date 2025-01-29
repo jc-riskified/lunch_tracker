@@ -88,16 +88,37 @@ server <- function(input, output, session) {
   })
   
   # Reactive expression to filter the restaurant ratings based on search input
+  # Reactive expression to filter the restaurant ratings based on search input
+  # Reactive expression to filter the restaurant ratings based on search input
   filtered_rankings <- reactive({
     req(avg_rankings()) # Ensure data exists
-    if (input$bulk_input == "") {
-      avg_rankings() # Show all data if no search input
+    
+    # Get input text and trim spaces
+    search_string <- trimws(input$bulk_input)
+    
+    if (search_string == "") {
+      return(avg_rankings()) # Show all data if no search input
     } else {
-      search_string <- input$bulk_input
+      # Split input by comma or newline
+      restaurant_list <- unlist(strsplit(search_string, "[,\n]"))
+      
+      # Trim whitespace and remove empty values
+      restaurant_list <- trimws(restaurant_list)
+      restaurant_list <- restaurant_list[restaurant_list != ""]
+      
+      # Convert restaurant names to lowercase for case-insensitive matching
       avg_rankings() %>%
-        filter(grepl(search_string, Restaurant, ignore.case = TRUE))
+        filter(
+          sapply(Restaurant, function(resto) {
+            any(sapply(restaurant_list, function(query) {
+              grepl(query, resto, ignore.case = TRUE)  # Case-insensitive partial match
+            }))
+          })
+        )
     }
   })
+  
+  
   
   # Reactive value to store the selected restaurant's rankings
   selected_restaurant_data <- reactiveVal(data.frame())
