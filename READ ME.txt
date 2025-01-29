@@ -9,6 +9,7 @@ Lunch Tracker How to Use
 ------------------------------------
 1. Clone the repository 
 2. Move the folder to your Dock. (can prob only be added near trash can bottom right)
+	has to be the whole folder not just the app
 3. When you want to check ratings or submit a rating, click the folder in dock and then click "Lunch Tracker App"
 4. It should launch in your browser
 
